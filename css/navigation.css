@@ -24,6 +24,8 @@
 	-ms-flex: none;
 	flex: none;
 	border-right: 1px solid #d7dbec;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 
@@ -35,6 +37,8 @@
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 9;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	display: none;
 }
@@ -60,6 +64,7 @@
 .nav_navigate > .item {
 	border-radius: 4px;
 	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
 	transition: 0.2s;
 	padding: 10px;
 	display: -webkit-box;
@@ -120,6 +125,7 @@
 	background-position: center;
 	background-size: contain;
 	-webkit-transition: background-image 0.2s;
+	-o-transition: background-image 0.2s;
 	transition: background-image 0.2s;
 	margin-left: 5px;
 }
@@ -156,6 +162,26 @@
 	width: 191px;
 }
 
+@-webkit-keyframes isVisible {
+	0% {
+		display: none;
+		opacity: 0;
+		left: -100px;
+	}
+
+	1% {
+		display: block;
+		opacity: 0;
+		left: -50px;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+		left: 0;
+	}
+}
+
 @keyframes isVisible {
 	0% {
 		display: none;
@@ -173,6 +199,20 @@
 		display: block;
 		opacity: 1;
 		left: 0;
+	}
+}
+
+@-webkit-keyframes isHidden {
+	0% {
+		display: block;
+		opacity: 1;
+		left: 0px;
+	}
+
+	100% {
+		display: block;
+		opacity: 0;
+		left: -100px;
 	}
 }
 
@@ -311,10 +351,14 @@
 		background-color: #f5f6fa;
 		z-index: 10;
 		overflow: scroll;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
 		transition: all 0.3s ease;
 	}
 
 	.responsive_navigation-laptop {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -328,7 +372,10 @@
 		background-color: #f5f6fa;
 		z-index: 10;
 		overflow: scroll;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
 		transition: all 0.3s ease;
+		-webkit-animation: isVisible 0.5s ease-in-out;
 		animation: isVisible 0.5s ease-in-out;
 	}
 
@@ -337,15 +384,18 @@
 	}
 
 	.overlay.active {
+		-webkit-animation: isVisible 0.5s ease-in-out;
 		animation: isVisible 0.5s ease-in-out;
 		display: block;
 	}
 
 	.responsive_navigation.hidden {
+		-webkit-animation: isHidden 0.5s ease-in-out;
 		animation: isHidden 0.5s ease-in-out;
 	}
 
 	.overlay.hidden {
+		-webkit-animation: isHidden 0.5s ease-in-out;
 		animation: isHidden 0.5s ease-in-out;
 		display: none;
 	}
