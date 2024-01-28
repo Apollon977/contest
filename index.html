@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/navigation.css" />
+		<title>Contest</title>
+	</head>
+	<body>
+		<div class="overlay hidden"></div>
+		<header class="resposive_header">
+			<div class="responsive_logo">
+				<div class="responsive_logo-icon">
+					<img src="./media/logo.png" alt="Logo" />
+				</div>
+				<div class="responsive_logo-text">GB Adviser</div>
+			</div>
+			<div class="responsive_search">
+				<div class="responsive_search-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M10.5 3C14.6421 3 18 6.35786 18 10.5C18 12.2101 17.4276 13.7866 16.464 15.0483L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3466 20.0676 18.7794 20.0953 18.3871 19.7903L18.2929 19.7071L15.0483 16.464C13.7866 17.4276 12.2101 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3ZM10.5 5C7.46243 5 5 7.46243 5 10.5C5 13.5376 7.46243 16 10.5 16C11.8511 16 13.0885 15.5128 14.0459 14.7045C14.091 14.5536 14.1738 14.412 14.2929 14.2929C14.412 14.1738 14.5536 14.091 14.7041 14.0446C15.5128 13.0885 16 11.8511 16 10.5C16 7.46243 13.5376 5 10.5 5Z"
+							fill="#7E84A3"
+						/>
+					</svg>
+				</div>
+				<div class="responsive_search-input">
+					<input type="text" placeholder="Поиск..." />
+				</div>
+			</div>
+			<div class="responsive_information">
+				<div class="responsive_information-chat">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M19 3C20.1046 3 21 3.89543 21 5V17C21 18.1046 20.1046 19 19 19H9L3 22L3 5C3 3.89543 3.89543 3 5 3H19ZM19 5H5V18.468L8.44603 17H19V5ZM11 12V14H7V12H11ZM17 8V10H7V8H17Z"
+							fill="#7E84A3"
+						/>
+					</svg>
+				</div>
+				<div class="responsive_information-notification">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M13 3C15.2816 3.46373 17 5.58146 17 8V12C18.1046 12 19 12.8954 19 14V19H14C14 20.1046 13.1046 21 12 21C10.8954 21 10 20.1046 10 19H5V14C5 12.8954 5.89543 12 7 12V8C7 5.58111 8.71785 3.46334 11 3H13ZM12 5C10.4023 5 9.09634 6.24892 9.00509 7.82373L9 8V12C9 13.1046 8.10457 14 7 14V17H17V14C15.8954 14 15 13.1046 15 12V8C15 6.34315 13.6569 5 12 5Z"
+							fill="#7E84A3"
+						/>
+					</svg>
+					<div class="notification-count">5</div>
+				</div>
+				<div class="responsive_information-account">
+					<img src="./media/account_icon.png" alt="account_logo" />
+					<span>Саша Смелая</span>
+					<div class="account_arrows">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="responsive_header-laptop">
+				<div class="action"></div>
+			</div>
+		</header>
+		<div class="responsive_wrapper">
+			<div class="responsive_navigation">
+				<div class="responsive_navigation-laptop"></div>
+				<div class="nav_content">
+					<div class="nav_navigate">
+						<a class="item nav-a">
+							<p>Главная</p>
+						</a>
+						<a class="item nav-b">
+							<p>Запросы</p>
+							<i>16</i>
+						</a>
+						<a class="item nav-c">
+							<p>Заметки</p>
+						</a>
+						<a class="item nav-d">
+							<p>Категории</p>
+						</a>
+						<a class="item nav-e">
+							<p>Пользователи</p>
+						</a>
+						<a class="item nav-f">
+							<p>Статистика</p>
+						</a>
+						<a class="item nav-g">
+							<p>Избранное</p>
+						</a>
+						<a class="item nav-j">
+							<p>Поддержка</p>
+						</a>
+						<div class="nav_navigate-information">Информация</div>
+						<a class="item nav-y active">
+							<p>База знаний</p>
+						</a>
+						<a class="item nav-k">
+							<p>Обновления</p>
+						</a>
+						<div class="nav_navigate-information">Настройки</div>
+						<a class="item nav-l">
+							<p>Профиль</p>
+						</a>
+						<a class="item nav-m">
+							<p>Общие Настройки</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="responsive_content">
+				<div class="primary_content">
+					<div class="left_content">
+						<div class="bread_crumbs">
+							<a class="item">
+								<p>Назад</p>
+							</a>
+						</div>
+						<div class="left_content-settings">
+							<h3>Настройки профиля</h3>
+							<div class="settings-items">
+								<a class="item active">Первичная настройка</a>
+								<a class="item">Профиль пользователя</a
+								><a class="item">Изменение общих настроек</a>
+								<a class="item">Дополнительные возможности</a>
+								<a class="item">Отправка запросов</a>
+								<a class="item">Работа со стастистикой</a>
+							</div>
+						</div>
+					</div>
+					<div class="right_content">
+						<div class="right_content-input">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M10.5 3C14.6421 3 18 6.35786 18 10.5C18 12.2101 17.4276 13.7866 16.464 15.0483L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3466 20.0676 18.7794 20.0953 18.3871 19.7903L18.2929 19.7071L15.0483 16.464C13.7866 17.4276 12.2101 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3ZM10.5 5C7.46243 5 5 7.46243 5 10.5C5 13.5376 7.46243 16 10.5 16C11.8511 16 13.0885 15.5128 14.0459 14.7045C14.091 14.5536 14.1738 14.412 14.2929 14.2929C14.412 14.1738 14.5536 14.091 14.7041 14.0446C15.5128 13.0885 16 11.8511 16 10.5C16 7.46243 13.5376 5 10.5 5Z"
+									fill="#7E84A3"
+								/>
+							</svg>
+							<input type="text" name="" placeholder="Поиск..." id="" />
+						</div>
+						<div class="right_content-main">
+							<h2>Первичная настройка</h2>
+							<div class="main_text">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Distinctio facilis minima necessitatibus ducimus illo sed quo
+									deserunt excepturi sunt non enim inventore aliquam esse
+									asperiores ea dolorem quibusdam labore quos facere iusto,
+									obcaecati doloremque aliquid est.
+								</p>
+								<p>
+									Рекомендации:
+									<br />
+									Lorem ipsum dolor sit, amet, consectetur adipisicing elit.
+									Fugiat.
+								</p>
+							</div>
+							<hr />
+							<h2>Начало работы</h2>
+							<div class="main_text">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Magnam sunt, iste animi, quia numquam, rerum veritatis itaque
+									tempore facilis repellendus harum reiciendis.
+								</p>
+								<div class="main_text-list">
+									<div class="list_element">
+										<span>1</span>
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+											Similique, doloribus, nulla. Soluta error repudiandae
+											cumque veniam fugiat, voluptatem repellat provident,
+											pariatur.
+										</p>
+									</div>
+									<div class="list_element">
+										<span>2</span>
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit.
+											Facilis harum delectus nemo iure praesentium amet, maxime
+											veniam.
+										</p>
+									</div>
+									<div class="list_element">
+										<span>3</span>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Repellendus aut nam earum! Lorem ipsum dolor sit amet.
+										</p>
+									</div>
+								</div>
+							</div>
+							<hr />
+							<h2>Дополнительная информация</h2>
+							<div class="main_text">
+								<div class="main_text-selector">
+									<div class="selector active">
+										<span>Пункт 11</span>
+									</div>
+									<div class="selector">
+										<span>Пункт 10</span>
+									</div>
+									<div class="selector">
+										<span>Пункт 9</span>
+									</div>
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Distinctio facilis minima necessitatibus ducimus illo sed quo
+									deserunt excepturi sunt non enim inventore aliquam esse
+									asperiores ea dolorem quibusdam labore quos facere iusto,
+									obcaecati doloremque aliquid est.
+									<br />
+									<br />
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+									Similique, doloribus, nulla. Soluta error repudiandae cumque
+									veniam fugiat.
+								</p>
+							</div>
+						</div>
+						<div class="right_content-question">
+							<h2>Вам понравилась статья?</h2>
+							<div class="main_text-question">
+								<button class="question_answer default-button">Да</button>
+								<button class="question_answer default-button">Нет</button>
+							</div>
+							<span class="question-count">
+								<span>50</span> людям помогла эта статья
+							</span>
+						</div>
+						<div class="right_content-recommendation-feed">
+							<div class="recommendation_post">
+								<h2>Сообщество GB</h2>
+								<p>
+									Обращайтесь за помощью к членам сообщества, задавайте любые
+									вопросы и получайте ответы.
+								</p>
+								<span>Присоединиться к сообществу</span>
+							</div>
+							<div class="recommendation_post">
+								<h2>GB Connect</h2>
+								<p>
+									Пользуйтесь всеми возможностями GB. Пройдите регистрацию в GB
+									Connect.
+								</p>
+								<span>Регистрация</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/index.js"></script>
+		<script src="./js/animation_button.js"></script>
+		<script src="./js/responsive.js"></script>
+	</body>
+</html>
