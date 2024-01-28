@@ -332,6 +332,10 @@
 		animation: isVisible 0.5s ease-in-out;
 	}
 
+	.responsive_navigation-laptop > .responsive_information {
+		display: none;
+	}
+
 	.overlay.active {
 		animation: isVisible 0.5s ease-in-out;
 		display: block;
@@ -344,5 +348,11 @@
 	.overlay.hidden {
 		animation: isHidden 0.5s ease-in-out;
 		display: none;
+	}
+}
+
+@media (max-width: 710px) {
+	.responsive_navigation-laptop > .responsive_information {
+		display: block;
 	}
 }
