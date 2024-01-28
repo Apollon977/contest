@@ -768,6 +768,7 @@ hr {
 	right: 0;
 	left: auto;
 	top: -240px;
+	opacity: 0;
 	z-index: 1;
 	pointer-events: all;
 	max-width: -webkit-fit-content;
@@ -919,7 +920,7 @@ hr {
 	color: #3772ff;
 }
 
-.modal-visible {
+.modal_header.modal-visible {
 	display: block;
 	-webkit-animation: modal-visible 0.5s ease-in-out;
 	animation: modal-visible 0.5s ease-in-out;
@@ -927,7 +928,7 @@ hr {
 	animation-fill-mode: forwards;
 }
 
-.modal-hidden {
+.modal_header.modal-hidden {
 	-webkit-animation: modal-hidden 0.5s ease-in-out;
 	animation: modal-hidden 0.5s ease-in-out;
 }
@@ -1113,19 +1114,16 @@ hr {
 
 @-webkit-keyframes modal-visible {
 	0% {
-		display: none;
 		opacity: 0;
 		top: -240px;
 	}
 
 	1% {
-		display: block;
 		opacity: 0;
 		top: -100px;
 	}
 
 	100% {
-		display: block;
 		opacity: 1;
 		top: 68px;
 	}
@@ -1133,19 +1131,16 @@ hr {
 
 @keyframes modal-visible {
 	0% {
-		display: none;
 		opacity: 0;
 		top: -240px;
 	}
 
 	1% {
-		display: block;
 		opacity: 0;
 		top: -100px;
 	}
 
 	100% {
-		display: block;
 		opacity: 1;
 		top: 68px;
 	}
@@ -1153,13 +1148,11 @@ hr {
 
 @-webkit-keyframes modal-hidden {
 	0% {
-		display: block;
 		opacity: 1;
 		top: 68px;
 	}
 
 	100% {
-		display: block;
 		opacity: 0;
 		top: -240px;
 	}
@@ -1167,13 +1160,11 @@ hr {
 
 @keyframes modal-hidden {
 	0% {
-		display: block;
 		opacity: 1;
 		top: 68px;
 	}
 
 	100% {
-		display: block;
 		opacity: 0;
 		top: -240px;
 	}
@@ -1261,6 +1252,13 @@ hr {
 		top: 130px !important;
 	}
 
+	.notif-modal {
+		top: 68px !important;
+		right: 0;
+		left: auto;
+		z-index: 11;
+	}
+
 	.profile-modal > .modal-main-content {
 		width: 242px;
 	}
@@ -1306,6 +1304,13 @@ hr {
 
 	.modal_header {
 		top: 180px !important;
+	}
+
+	.notif-modal {
+		top: 68px !important;
+		right: 0;
+		left: auto;
+		z-index: 11;
 	}
 }
 
