@@ -15,11 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	window.addEventListener('scroll', function () {
 		let scrolled = window.scrollY;
 
-		if (scrolled > 1) {
-			responsive_navigation.style.top = '0';
-		} else {
-			responsive_navigation.style.top = '68px';
-		}
+		scrolled > 1
+			? (responsive_navigation.style.top = '0')
+			: (responsive_navigation.style.top = '68px');
 	});
 
 	action_button.addEventListener('click', () => {
@@ -61,9 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	button_mobile.addEventListener('click', () => {
 		navigation(rect, 'modal-visible', 'modal-hidden', 500);
 	});
-});
 
-document.addEventListener('DOMContentLoaded', () => {
 	notif_button.addEventListener('click', () => {
 		navigation(notif_modal, 'modal-visible', 'modal-hidden', 500);
 	});
@@ -75,8 +71,6 @@ function navigation(element, first, second, timeOfAnimation) {
 		element.classList.remove(second);
 	} else {
 		element.classList.add(second);
-		window.setTimeout(function () {
-			element.classList.remove(first);
-		}, timeOfAnimation);
+		window.setTimeout(() => element.classList.remove(first), timeOfAnimation);
 	}
 }
